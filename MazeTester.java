@@ -1,10 +1,7 @@
 /**
  * MazeTester.java
- * CSC 115 - Assignment 3
  * MazeTester.java will test the methods implemented in Maze.java
- * Author: Alain-Joseph Po-Deziel
- * UVic ID: V00815622
- * Date: 04/03/2015
+ * Author: AJ Po-Deziel
  */
  
  public class MazeTester {
