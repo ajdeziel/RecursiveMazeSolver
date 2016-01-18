@@ -1,4 +1,4 @@
-# RecursiveMazeSolver
+# Recursive Maze Solver
 Escaping a maze can be downright difficult, and at times seemingly impossible. This may lead to much frustration, but the Recursive Maze Solver avoids these issues by determining the way out! Created for a university fundamentals of programming course, the program uses a brute force recursive algorithm to determine if the route from a pre-defined start and finish point.
 
 
