@@ -1,7 +1,6 @@
 /**
  * RunSolver.java
  *
- * Created for CSC 115 Assignment Three
  * Authored by Mike Zastre, required to run Maze.java
  *
  * This top-level program takes the name of a file containing maze
