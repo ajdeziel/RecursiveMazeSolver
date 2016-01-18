@@ -1,8 +1,8 @@
 /**
  * MazeLocationListRefBased.java
  *
- * Created for CSC 115 Assignment Three
- *
+ * Authored by Mike Zastre, required to run Maze.java
+ * 
  * This is a fairly simple ref-based linked-list implementation
  * that satisfies the needs of the interface. Note that a doubly-linked
  * list could make removeTail a bit more efficient, but only at
