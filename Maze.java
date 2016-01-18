@@ -1,8 +1,6 @@
 /** 
  * Maze.java
- * CSC 115 - Assignment 3
- * Author: Alain-Joseph Po-Deziel
- * Date submitted: 04/03/2015
+ * Author: AJ Po-Deziel
  */
  
  public class Maze {
@@ -49,11 +47,13 @@
 		
 		boolean solved = false;
 		
+		//Set up to evaluate within maze walls
 		if ((fromRow < 0) || (fromRow >= mazeArray.length) 
 			|| (fromCol < 0) || (fromCol >= mazeArray[0].length)) {
 			return false;
 		}//end if
 		
+		//Check for maze walls
 		if (mazeArray[fromRow][fromCol] == '*') {
 			return false;
 		} else {mazeArray[fromRow][fromCol] = '*';}
@@ -63,17 +63,17 @@
 		MazeLocation current = new MazeLocation(fromRow, fromCol);
 		inputHere.insertTail(current);
 		
-		if (fromRow == toRow && fromCol == toCol) {
+		if (fromRow == toRow && fromCol == toCol) { // When current point equals finish point
 			return true;
 		}//end if
 		
-		if (findPath(fromRow, fromCol + 1, toRow, toCol)) {
+		if (findPath(fromRow, fromCol + 1, toRow, toCol)) { //Go right
 			solved = true;
-		} else if (findPath(fromRow - 1, fromCol, toRow, toCol)) {
+		} else if (findPath(fromRow - 1, fromCol, toRow, toCol)) { //Go up
 			solved = true;
-		} else if (findPath(fromRow, fromCol - 1, toRow, toCol)) {
+		} else if (findPath(fromRow, fromCol - 1, toRow, toCol)) { //Go left
 			solved = true;
-		} else if (findPath(fromRow + 1, fromCol, toRow, toCol)) {
+		} else if (findPath(fromRow + 1, fromCol, toRow, toCol)) { //Go down
 			solved = true;
 		}//end if else
 		
